@@ -1,0 +1,22 @@
+{
+  "name": "my-app-vue-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/my-app-vue-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "outputs": ["{workspaceRoot}/dist/.playwright/apps/my-app-vue-e2e"],
+      "options": {
+        "config": "apps/my-app-vue-e2e/playwright.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/my-app-vue-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "implicitDependencies": ["my-app-vue"]
+}
