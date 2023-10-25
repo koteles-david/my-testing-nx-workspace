@@ -1,13 +1,15 @@
 <script setup lang="ts">
+import { TestButton } from "@my-testing-nx-workspace/vue-component-library"
 defineProps<{
   title: string;
 }>();
 </script>
 
 <template>
-  <div class="wrapper">
+  <div class="wrapper">``
     <div class="container">
       <div id="welcome">
+        <test-button label="TEST"></test-button>
         <h1>
           <span> Hello there, </span>
           Welcome {{ title }} 👋

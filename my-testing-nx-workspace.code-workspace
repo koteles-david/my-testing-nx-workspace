@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "Root",
+      "path": "./"
+    },
+    {
+      "name": "[APP] My vue app",
+      "path": "./apps/my-app-vue"
+    },
+    {
+      "name": "[PACKAGE] Vue component library",
+      "path": "./libs/vue-component-library"
+    }
+  ]
+}

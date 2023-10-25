@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@my-testing-nx-workspace/vue-component-library": [
+        "libs/vue-component-library/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
